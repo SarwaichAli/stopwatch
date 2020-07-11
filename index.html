@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Stop Watch</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            body{
+                text-align: center;
+                background-color: black;
+            }
+            h1 {
+              margin-top: 20px;
+              margin-bottom: 20px;
+              display: inline-block;
+              color: white;
+             padding: 20px;
+               }
+            button{
+                margin-left: 30px;
+            }
+            .heading h2 {
+            color: white;
+             padding: 21px;
+            }
+            .mybtn button {
+             width: 125px;
+             height: 40px;
+             background-color: #efdc34;
+             border: navajowhite;
+             border-radius: 10px;
+             }
+             @media only screen and (max-width: 600px) {
+             h1 {
+              font-size: 30px;
+              padding: 10px;
+             }
+             .mybtn button{
+                 margin-top: 10px;
+
+             }
+}
+        </style>
+    </head>
+    <body>
+        <div class="heading">
+            <h2 class="text-center">Stop Watch</h2>
+        </div>
+        
+        <div>
+            <h1 id="min">00 </h1>
+            <h1>:</h1>
+            <h1 id="sec">00 </h1>
+            <h1>:</h1>
+            <h1 id="msec">00</h1>
+        </div>
+        <div class="mybtn">
+            <button onclick="start()" id="">Start</button>
+            <button onclick="stop()">Pause</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+  
+      
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+    <script src="app.js"></script>
+</html>
